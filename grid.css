@@ -1,0 +1,131 @@
+
+body{
+    margin: 30px;
+    background-color: #EDF2F8 ;
+   font-weight: 500 600;
+}
+.grid-container{
+    display: grid;
+    margin: 0 auto;
+    max-width: 100%;  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.t-card{
+    width: 400px;
+    padding: 20px;
+}
+.card1{
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    grid-column: span 2; 
+    padding: 30px;
+    line-height: 1.5em;
+}
+.card1 #t1 h3{
+   
+    color: hsl(210, 46%, 95%);
+}
+.card1 #t1 p{
+   
+    color: hsl(0, 0%, 81%)
+}
+.card2{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 1.5em; 
+}
+.card2 #t2 h3{
+    color: hsl(210, 46%, 95%);
+}
+.card2 #t2 p{
+   
+    color: hsl(0, 0%, 81%);
+}
+
+.t-card2, .profile-info{
+    font-size: 9px;
+}
+.card3{
+    background-color:  white;
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 1.5em;   
+     box-shadow: 0 0 5px  3px hsl(210, 46%, 81%);
+}
+.card3 #t3 h3{
+    color: hsl(0, 0%, 40%);
+}
+.card3 #t3 p{
+    color: hsl(0, 0%, 30%);
+}
+.card4{
+background-color: hsl(219, 29%, 14%);
+border-radius: 10px;
+grid-column: span 2;
+padding: 30px;
+line-height: 1.5em;
+ box-shadow:  0 0 5px  3px hsl(210, 46%, 81%);
+}
+.card4 #t4 h3{
+    color: hsl(210, 46%, 95%);
+}
+.card4 #t4 p{
+    color: hsl(0, 0%, 81%)
+}
+.card5{
+    background-color: white;
+    border-radius: 10px;
+    grid-row: span 2;
+    padding: 30px;
+    line-height: 1.5em;
+     box-shadow:  0 0 5px  3px hsl(210, 46%, 81%);
+}
+.card5 #t5 h3{
+    color: hsl(0, 0%, 40%);
+}
+.card5 #t5 p{
+    color: hsl(0, 0%, 30%);
+}
+.header-info{
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+    gap: 10px;
+    line-height: 0.5;
+}
+.header-info  #p-info h1{
+    color:  hsl(0, 0%, 40%);
+}
+.header-info .profile-info h1{
+    color:  hsl(210, 46%, 95%);
+}
+.header-info .profile-info p{
+    color:  hsl(0, 0%, 70%);
+}
+.profile,img{
+    border-radius: 50px;
+}
+.attribution{
+    grid-column: span 4;
+    text-align: center;
+}
+ /* Media queries for responsiveness  */
+ @media (min-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
